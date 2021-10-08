@@ -1,0 +1,31 @@
+/* Loader */
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+}
+
+.loader {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid #474040;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    position: absolute;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
